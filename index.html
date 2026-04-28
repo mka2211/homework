@@ -4,101 +4,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Createx Online Courses</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="stylesheet" href="./src/output.css">
 </head>
 
 <body class="font-sans antialiased text-slate-900">
 
-<div class="bg-[#DDBFAF] min-h-screen">
-    
-    <header>
-        <div class="max-w-[1230px] mx-auto flex justify-between items-center py-5 px-4">
-            <div class="flex items-center gap-10 lg:gap-[60px]">
-                <img src="./src/logo.png" alt="Logo" class="h-8">
+    <div class="bg-[#DDBFAF]">
+        <header>
+            <div class="max-w-[1230px] mx-auto flex justify-between items-center py-5 px-4">
+                <div class="flex items-center gap-10 lg:gap-[60px]">
+                    <img src="./src/logo.png" alt="Logo" class="h-8">
+                    <nav class="hidden md:flex gap-6 font-semibold text-slate-700">
+                        <a href="#" class="hover:text-orange-600 transition">About Us</a>
+                        <a href="#" class="hover:text-orange-600 transition">Courses</a>
+                        <a href="#" class="hover:text-orange-600 transition">Events</a>
+                        <a href="#" class="hover:text-orange-600 transition">Blog</a>
+                        <a href="#" class="hover:text-orange-600 transition">Contacts</a>
+                    </nav>
+                </div>
                 
-                <nav class="hidden md:flex gap-6 font-semibold text-slate-700">
-                    <a href="#" >About Us</a>
-                    <a href="#" >Courses</a>
-                    <a href="#" >Events</a>
-                    <a href="#" >Blog</a>
-                    <a href="#" >Contacts</a>
-                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="bg-[#F75E05] text-white px-5 py-2.5 rounded text-sm font-bold hidden sm:block">
+                        Get consultation
+                    </button>
+                    <div class="flex items-center gap-2 cursor-pointer">
+                      <img src="./src/account.png" alt="">
+                    </div>
+                </div>
             </div>
-            
-            <div class="flex items-center gap-4">
-                <button class="bg-[#F75E05]  text-white px-5 py-2.5 rounded text-sm font-bold lg:block hidden">
-                    Get consultation
+        </header>
+
+        <section class="pt-10 md:pt-20 pb-10">
+            <div class="max-w-[1230px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
+                <div class="text-center lg:text-left">
+                    <div class="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                        <img src="./src/hover.png" alt="Play" class="w-12 h-12 cursor-pointer hover:scale-110 transition">
+                        <span class="font-bold text-sm">Play showreel</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-[64px] font-black leading-tight mb-10">
+                        Enjoy studying <br class="hidden md:block">
+                        with Createx <br class="hidden md:block">
+                        Online Courses
+                    </h1>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button class="border border-[#F75E05] text-[#F75E05] font-bold py-3 px-8 rounded w-full sm:w-auto">
+                            About us
+                        </button>
+                        <button class="bg-[#F75E05] text-white font-bold py-3 px-10 rounded hover:bg-[#d44d04] transition w-full sm:w-auto">
+                            Explore courses
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full max-w-[600px]">
+                    <img src="./src/illustration.png" alt="Illustration" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="max-w-[1230px] mx-auto px-4 flex flex-wrap justify-between items-center gap-8 md:gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl md:text-4xl font-black text-slate-800">1200</span>
+                    <span class="text-sm text-slate-700 leading-tight">Students<br>graduated</span>
+                </div>
+                <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl md:text-4xl font-black text-slate-800">84</span>
+                    <span class="text-sm text-slate-700 leading-tight">Completed<br>courses</span>
+                </div>
+                <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl md:text-4xl font-black text-slate-800">16</span>
+                    <span class="text-sm text-slate-700 leading-tight">Qualified<br>tutors</span>
+                </div>
+                <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl md:text-4xl font-black text-slate-800">5</span>
+                    <span class="text-sm text-slate-700 leading-tight">Years of<br>experience</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-[1230px] mx-auto px-4 flex flex-col lg:flex-row items-center gap-12 lg:gap-32">
+            <div class="w-full lg:w-1/2">
+                <img src="./src/image (34).png" alt="Student" class="w-full h-auto rounded-lg">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <p class="uppercase tracking-widest text-slate-900 font-bold text-sm mb-2">Who we are</p>
+                <h2 class="text-4xl md:text-[46px] font-black text-slate-900 mb-8">Why Createx?</h2>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-start gap-4">
+                        <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Vulpate placerat amet pulvinar lorem nisl.</p>
+                    </li>
+                    <li class="flex items-start gap-4">
+                     <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</p>
+                    </li>
+                     <li class="flex items-start gap-4">
+                     <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Etiam duis lobortis in fames ultrices commodo nibh.</p>
+                    </li>
+                     <li class="flex items-start gap-4">
+                     <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Tincidunt sagittis neque sem ac eget.</p>
+                    </li>
+                     <li class="flex items-start gap-4">
+                     <img src="./src/check.png" alt="">
+                        <p class="text-slate-600">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</p>
+                    </li>
+                </ul>
+                <button class="bg-[#F75E05] text-white font-bold py-3.5 px-10 rounded hover:bg-[#d44d04] transition w-full sm:w-auto">
+                    More about us
                 </button>
-                <div class="flex items-center gap-2 cursor-pointer">
-                   <img src="./src/account.png" alt="">
-                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <section class="pt-10 md:pt-20 pb-10">
-        <div class="max-w-[1230px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
-            
-            <div class="text-center lg:text-left">
-                <div class="flex items-center justify-center lg:justify-start gap-3 mb-6">
-                    <img src="./src/hover.png" alt="Play" class="w-12 h-12 cursor-pointer hover:scale-110 transition">
-                    <span class="font-bold text-sm">Play showreel</span>
+    <section class="py-20 bg-white">
+        <div class="max-w-[1230px] mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <p class="uppercase tracking-widest text-slate-900 font-bold text-sm mb-2">Ready to learn?</p>
+                    <h2 class="text-4xl md:text-[46px] font-black text-slate-900">Featured Courses</h2>
                 </div>
+                <button class="mt-6 md:mt-0 border border-[#F75E05] text-[#F75E05] font-bold py-3 px-8 rounded ">
+                    View all courses
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <h1 class="text-4xl md:text-5xl lg:text-[64px] font-black leading-tight mb-10">
-                    Enjoy studying <br class="hidden md:block">
-                    with Createx <br class="hidden md:block">
-                    Online Courses
-                </h1>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-                    <button class="border border-[#F75E05] text-[#F75E05] font-bold py-3 px-8 rounded hover:bg-[#F75E05] hover:text-white transition w-full sm:w-auto">
-                        About us
-                    </button>
-                    <button class="bg-[#F75E05] text-white font-bold py-3 px-10 rounded hover:bg-[#d44d04] transition w-full sm:w-auto">
-                        Explore courses
-                    </button>
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/image.png" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-green-500 text-white text-xs px-2 py-1 rounded">Marketing</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">The Ultimate Guide to 2D Game Design</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$100</span>
+                            <span class="text-gray-400">| by Jerome Bell</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="w-full max-w-[600px]">
-                <img src="./src/illustration.png" alt="Illustration" class="w-full h-auto">
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/3c1aec192431e6e01ed1fbdccfd71f81f6733c07.jpg" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded">Management</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">Product Management Fundamentals</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$480</span>
+                            <span class="text-gray-400">| by Jerome Bell</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/7cb9118304ebf43420b4ae6ad8766c497c396e30.jpg" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-[#F89828] text-white text-xs px-2 py-1 rounded">HR & Recruting</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">HR  Management and Analytics</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$200</span>
+                            <span class="text-gray-400">| by Leslie Alexander Li</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/9c8c0aea65015a83f4a2b22a4a0f2afa263c7a68.jpg" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-[#03CEA4] text-white text-xs px-2 py-1 rounded">Marketing</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">Brand Management & PR Communications</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$530</span>
+                            <span class="text-gray-400">| by Kristin Watson</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/625bd937d856de9205120218490f1c1fae23a386.jpg" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded">Management</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">Business Development Management</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$400</span>
+                            <span class="text-gray-400">| by Dianne Russell</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition cursor-pointer">
+                    <img src="./src/a51456ffbd99e8b0160cd7231964e2c1a36e9d27.jpg" alt="Course" class="w-full sm:w-52 h-52 ">
+                    <div class="p-6">
+                        <span class="bg-[#F52F6E] text-white text-xs px-2 py-1 rounded">Design</span>
+                        <h3 class="text-xl font-bold mt-3 mb-4">Graphic Design Basic</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-[#F75E05] font-bold">$500</span>
+                            <span class="text-gray-400">| by Guy Hawkins</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-
-    <section class="py-16">
-        <div class="max-w-[1230px] mx-auto px-4 flex flex-wrap justify-between items-center gap-8 md:gap-4">
-            
-            <div class="flex items-center gap-3">
-                <span class="text-3xl md:text-4xl font-black text-slate-800">1200</span>
-                <span class="text-sm text-slate-700 leading-tight">Students<br>graduated</span>
-            </div>
-
-            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
-
-            <div class="flex items-center gap-3">
-                <span class="text-3xl md:text-4xl font-black text-slate-800">84</span>
-                <span class="text-sm text-slate-700 leading-tight">Completed<br>courses</span>
-            </div>
-
-            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
-
-            <div class="flex items-center gap-3">
-                <span class="text-3xl md:text-4xl font-black text-slate-800">16</span>
-                <span class="text-sm text-slate-700 leading-tight">Qualified<br>tutors</span>
-            </div>
-
-            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
-
-            <div class="flex items-center gap-3">
-                <span class="text-3xl md:text-4xl font-black text-slate-800">5</span>
-                <span class="text-sm text-slate-700 leading-tight">Years of<br>experience</span>
-            </div>
-
-        </div>
-    </section>
-</div>
 
 </body>
 </html>

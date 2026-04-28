@@ -1,31 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Createx Online Courses</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<link rel="stylesheet" href="./src/output.css">
 
-<body>
-    <section>
-        <div class="">
-            <div>
-                <div><img src="./src/logo.png" alt=""></div>
-                <div><a href="">About Us</a>
-                      <a href="">Courses</a>
-                      <a href="">Events</a>
-                      <a href="">Blog</a>
-                      <a href="">Contacts</a>
-                </div>
-                <div>
-                    <button>Get consultation</button>
-                    <img src="./src/account.png" alt="">
+<body class="font-sans antialiased text-slate-900">
+
+<div class="bg-[#DDBFAF] min-h-screen">
+    
+    <header>
+        <div class="max-w-[1230px] mx-auto flex justify-between items-center py-5 px-4">
+            <div class="flex items-center gap-10 lg:gap-[60px]">
+                <img src="./src/logo.png" alt="Logo" class="h-8">
+                
+                <nav class="hidden md:flex gap-6 font-semibold text-slate-700">
+                    <a href="#" >About Us</a>
+                    <a href="#" >Courses</a>
+                    <a href="#" >Events</a>
+                    <a href="#" >Blog</a>
+                    <a href="#" >Contacts</a>
+                </nav>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <button class="bg-[#F75E05]  text-white px-5 py-2.5 rounded text-sm font-bold lg:block hidden">
+                    Get consultation
+                </button>
+                <div class="flex items-center gap-2 cursor-pointer">
+                   <img src="./src/account.png" alt="">
                 </div>
             </div>
         </div>
-    </section>
-</body>
+    </header>
 
+    <section class="pt-10 md:pt-20 pb-10">
+        <div class="max-w-[1230px] mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
+            
+            <div class="text-center lg:text-left">
+                <div class="flex items-center justify-center lg:justify-start gap-3 mb-6">
+                    <img src="./src/hover.png" alt="Play" class="w-12 h-12 cursor-pointer hover:scale-110 transition">
+                    <span class="font-bold text-sm">Play showreel</span>
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl lg:text-[64px] font-black leading-tight mb-10">
+                    Enjoy studying <br class="hidden md:block">
+                    with Createx <br class="hidden md:block">
+                    Online Courses
+                </h1>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <button class="border border-[#F75E05] text-[#F75E05] font-bold py-3 px-8 rounded hover:bg-[#F75E05] hover:text-white transition w-full sm:w-auto">
+                        About us
+                    </button>
+                    <button class="bg-[#F75E05] text-white font-bold py-3 px-10 rounded hover:bg-[#d44d04] transition w-full sm:w-auto">
+                        Explore courses
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full max-w-[600px]">
+                <img src="./src/illustration.png" alt="Illustration" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-[1230px] mx-auto px-4 flex flex-wrap justify-between items-center gap-8 md:gap-4">
+            
+            <div class="flex items-center gap-3">
+                <span class="text-3xl md:text-4xl font-black text-slate-800">1200</span>
+                <span class="text-sm text-slate-700 leading-tight">Students<br>graduated</span>
+            </div>
+
+            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+
+            <div class="flex items-center gap-3">
+                <span class="text-3xl md:text-4xl font-black text-slate-800">84</span>
+                <span class="text-sm text-slate-700 leading-tight">Completed<br>courses</span>
+            </div>
+
+            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+
+            <div class="flex items-center gap-3">
+                <span class="text-3xl md:text-4xl font-black text-slate-800">16</span>
+                <span class="text-sm text-slate-700 leading-tight">Qualified<br>tutors</span>
+            </div>
+
+            <div class="hidden lg:block h-2 w-2 rounded-full bg-[#F75E05]"></div>
+
+            <div class="flex items-center gap-3">
+                <span class="text-3xl md:text-4xl font-black text-slate-800">5</span>
+                <span class="text-sm text-slate-700 leading-tight">Years of<br>experience</span>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+</body>
 </html>
